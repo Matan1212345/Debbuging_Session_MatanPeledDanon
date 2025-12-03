@@ -4,6 +4,7 @@
 
 Triangle::Triangle(float base, float height) : _base(base), _height(height)
 {
+	_area = (0.5 * _base * _height);
 }
 
 float Triangle::get_area(bool has_depth) const
@@ -13,5 +14,5 @@ float Triangle::get_area(bool has_depth) const
 		throw std::exception("3D triangle is not implemented yet!");
 	}
 
-	return float(0.5 * _base * _height);
+	return _area;
 }

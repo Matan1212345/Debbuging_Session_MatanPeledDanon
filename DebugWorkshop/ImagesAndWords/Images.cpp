@@ -95,6 +95,8 @@ int main()
 {
 	Image *im = ReadImage("img1.magi");
 	FreeImage(im);
+	Image* im = ReadImage("img2.magi");
+	FreeImage(im);
 
 	return 0;
 }

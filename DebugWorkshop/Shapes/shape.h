@@ -1,12 +1,12 @@
 #ifndef __SHAPE_H__
 #define __SHAPE_H__
 
-class Shape 
+class Shape
 {
 private:
-	float _area;
 	float _perimeter;
-
+protected:
+	float _area;
 public:
 	Shape();
 	virtual float get_area() const;
